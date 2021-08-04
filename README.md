@@ -35,7 +35,7 @@ def main(event, context):
 
 With the above parameters ("daily" report), the script will look at the current time in UTC and perform the query on the previous day, 24 hour period (UTC).
 
-You can also specify a date using 'year', 'month', 'day', and 'report': None e.g. to use this script to backfill data by calling:
+You can also specify a date using 'year', 'month', 'day', and 'report': None e.g. to use this script to backfill data. Here's an example non-Lambda invocation:
 ```
 insights_to_s3.main(event, None)
 ```
